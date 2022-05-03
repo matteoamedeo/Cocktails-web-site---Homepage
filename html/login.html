@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon/glass-cocktail.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/72dca51289.css">
+    <link rel="stylesheet" href="/JAVASCRIPT/cocktails/css/login.css">
+    <link rel="stylesheet" href="/JAVASCRIPT/cocktails/css/settings.css">
+    <title id="titolo-pagina">Login</title>
+</head>
+
+<body>
+
+    <section id="login-wrapper">
+        <h2 class="logo">cocktails</h2>
+        <section id="credenziali">
+            <h2 id="account">Creare account</h2>
+
+            <p id="nome">
+                Il tuo nome
+                <input type="text" id="inpNomeUtente" placeholder="" name="nome" required>
+            </p>
+            <p id="mail">
+                Numero di cellulare o e-mail
+                <input type="text" placeholder="" name="mail" required>
+            </p>
+            <p id="password">
+                Password
+                <input type="password" id="password" name="pwd" placeholder="Almeno 6 caratteri" minlength="6">
+            </p>
+            <div id="pass-descrizione">
+                <ion-icon name="information-circle-outline"></ion-icon>
+                Le password devono essere composte &ensp; &ensp; almeno da 6 caratteri.
+            </div>
+            <p id="verifica-password">
+                Verifica password
+                <input type="password" id="ver-password" name="pwd" minlength="6">
+            </p>
+            <p id="check-eta">
+                Sei maggiorenne?
+            </p>
+            <p id="radio">
+                <input type="radio" id="checkSi" name="Si" value="Si" required>
+                <label for="Si"> Si</label>
+                <input type="radio" name="No" value="No">
+                <label for="No"> No</label>
+            </p>
+            <div id="invia">
+                <button class=".btn-grad button-default" >
+                    <a href="#">Continua</a>
+                </button>
+            </div>
+            <div id="legal-text">
+                Registrandoti dichiari di aver letto e accetti integralmente le nostre
+                <a href=""> Condizioni generali di uso e vendita. </a>
+                Prendi visione della nostra
+                <a href="">Informativa sulla privacy</a>,
+                della nostra
+                <a href="">Informativa sui Cookie</a> e della nostra
+                <a href="">Informativa sulla Pubblicità definita in base agli interessi.</a>
+            </div>
+
+        </section>
+
+
+    </section>
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const inpNome = document.getElementById('inpNomeUtente')
+        // console.log(inpNome);
+        inpNome.addEventListener('keydown', getInput)
+        nome = []
+
+        function getInput(e) {
+             console.log(e);
+             if(e.keyCode >= 64 && e.keyCode <= 90 || e.keyCode === 32){
+                nome.push(e.key)
+                 console.log(nome.length);
+             }
+            if(e.keyCode === 8 )
+            nome.pop()
+            if(nome.length > 2)
+           console.log(nome.reduce((a, b) => a + b));
+        }
+    </script>
+</body>
+
+</html>

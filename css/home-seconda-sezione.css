@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300&display=swap');
+
+:root {
+    --main-color: rgba(229, 230, 224, 0.7);
+    --main-color-light: rgba(229, 230, 224, 1);
+    --dark-red: rgba(255, 0, 0, 0.5);
+    --black: rgb(8, 8, 8);
+    --violet: #620053;
+    --violet2: rgb(98, 0, 83)
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
+}
+
+#seconda-sezione {
+    width: 100vw;
+    /* height: 100vh; */
+}
+#componi{
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#seconda-sezione h1 {
+    color: var(--black);
+    padding: 30px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+#istruzioni {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#istruzioni>div {
+    width: 320px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2rem;
+    background-color: var(--black);
+    z-index: -1;
+}
+
+#istruzioni p{
+    margin: 20px;
+}
+.numero{
+    font-size: 2rem;
+    color: var(--main-color-light);
+    color: black;
+    background-color: var(--main-color-light);
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    /* z-index: 1; */
+}
+.numero::before{
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    /* background-color: violet; */
+    background: linear-gradient(to bottom right, violet,red);
+    border-radius: 10px;
+    left: 120px;
+    top: 45px;
+    border-width: 2px 0 0 2px;
+    transform: skew(10deg);
+    z-index: -1;
+}
+
+.istruzione{
+    font-size: 1.5rem;
+    color: var(--main-color-light);
+}
+.istruzione-dettagli{
+    font-size: 0.8rem;
+}
+
+.crea {
+    width: 300px;
+    padding: 20px;
+    margin: 100px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.crea a {
+    color: var(--black);
+    font-size: 1.2rem;
+    text-decoration: none;
+    
+}
+
+.crea:hover{
+    background-color: var(--black);
+    transition: all .5s ease;
+}
+.crea:hover a{
+    color: var(--main-color-light);
+    transition: all .5s ease;
+}
+.button-default{
+    /* background-image: linear-gradient(to right, violet 0%, var(--violet)  51%, violet  100%); */
+    background-image: linear-gradient(to right, white 0%, white  50%, black  50%);
+    border-radius: 5px;
+   transition: 0.5s;
+   display: block;
+   background-size: 200% auto;
+}
+.button-default:hover{
+    background-position: right center; /* change the direction of the change here */
+ }

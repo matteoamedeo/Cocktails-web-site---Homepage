@@ -1,0 +1,59 @@
+#menu-slider>nav {
+    width: 100vw !important;
+
+}
+
+#menu-slider ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-slider li {
+    text-decoration: none;
+    list-style: none;
+    padding: 40px;
+}
+
+#menu-slider li:hover a {
+    font-size: 3.5rem;
+
+}
+
+#menu-slider a:link {
+    text-decoration: none;
+}
+
+#menu-slider a {
+    /* color: var(--main-color-light); */
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.menu-slider {
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    margin-left: -100vw;
+}
+
+.apri-menu-slider {
+    margin-left: 0;
+    transition: all 0.7s ease;
+    /* background-image: linear-gradient(to bottom right, rgba(255, 100, 50, 0), rgba(255, 100, 50, 0.9)); */
+    background-image: linear-gradient(to bottom right, rgba(255, 50, 50, 0), rgba(255, 50, 50, 0.7), rgba(255, 50, 50, 1));
+}
+
+.chiudi-menu-slider {
+    margin-left: -100vw;
+    transition: all 0.7s ease;
+    background-image: linear-gradient(to bottom right, rgba(255, 50, 50, 0), rgba(255, 50, 50, 0.7), rgba(255, 50, 50, 1));
+}

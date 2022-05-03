@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300&display=swap');
+
+:root {
+    --main-color: rgba(229, 230, 224, 0.7);
+    --main-color-light: rgba(229, 230, 224, 1);
+    --dark-red: rgba(255, 0, 0, 0.5);
+    --black: rgb(8, 8, 8)
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+    #login {
+        font-size: 0.8rem !important;
+        width: 2.5rem !important;
+    }
+
+    #login>div {
+        width: 3.5rem !important;
+        right: -20% !important;
+    }
+
+    #menu {
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+
+    #menu .barra1 {
+        transform: rotate(45deg) translateX(0.6rem) translateY(0.6rem) !important;
+    }
+
+    #menu .barra3 {
+        transform: rotate(-45deg) translateX(-0.4rem) translateY(0.4rem) !important;
+    }
+
+    #share {
+        font-size: 0.8rem !important;
+
+    }
+
+    #logo p:nth-child(1) {
+        font-size: 6rem !important;
+    }
+
+    #logo p:nth-child(2) {
+        font-size: 4rem !important;
+    }
+
+    /* #prima-img>img {
+        height: 10vh !important;
+        margin-top: 10vh;
+    } */
+}
+
+@media screen and (max-width: 1024px) {
+    /* #prima-img>img {
+        height: 80vh !important;
+        margin-top: 20vh !important;
+    } */
+    #logo p:nth-child(2) {
+        margin-top: -40px !important;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    /* #prima-img>img {
+        height: 30vh !important;
+        margin-top: 40vh !important;
+    } */
+
+    #logo {
+        top: 15% !important;
+    }
+
+    #scopri {
+        position: absolute;
+        margin-top: 40vh;
+    }
+}
+
+/* MEDIA QUERY */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 15px;
+}
+
+
+#prima-img {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: var(--black);
+    /* background-color: rgb(8, 8, 8); */
+    /* background: linear-gradient(to right, rgb(6, 6, 6), rgb(80, 80, 80), rgb(6, 6, 6)); */
+    /* background-color:rgba(255, 0, 0, 0.8); */
+}
+
+#prima-img>img {
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-position: center;
+    margin: auto;
+    width: 200px;
+    height: 100px;
+    height: 45vw;
+    width: 100%;
+
+    /* position: absolute; 
+     top: calc( 50% ); */
+}
+
+#login {
+    font-size: 1.5rem;
+    position: absolute;
+    right: calc(50% / 5);
+    top: 5%;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#login>div {
+    position: absolute;
+    right: -2%;
+    top: 0;
+    width: 8rem;
+    height: 100%;
+    border: solid rgba(255, 0, 0, 0.5);
+    border-width: 2px 0 0 2px;
+    transform: skew(10deg);
+    border-radius: 10px;
+}
+
+#login>div:hover {
+    box-shadow: 5px 0 10px 0 rgba(255, 0, 0, 0.5);
+    transition: all .4s ease;
+}
+
+#login:hover {
+    color: var(--main-color-light);
+    transition: all .4s ease;
+}
+
+#cerca {
+    position: absolute;
+    top: 5%;
+    /* right: 50%; */
+    width: 30vw;
+
+}
+#cerca > input{
+    width: 100%;
+    
+}
+input{
+    color: var(--black);
+}
+
+
+#menu {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5%;
+    left: calc(50% / 8);
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+}
+
+#menu:hover .barre {
+    background-color: var(--main-color-light);
+    transition: all .7s ease;
+}
+
+#menu .barra1 {
+    transform: rotate(45deg) translateX(0.9rem) translateY(0.9rem);
+    transition: all .7s ease;
+    background-color: var(--main-color-light);
+    margin: 0;
+}
+
+#menu .barra3 {
+    transform: rotate(-45deg) translateX(-0.7rem) translateY(0.7rem);
+    transition: all .7s ease;
+    background-color: var(--main-color-light);
+    margin: 0;
+}
+
+#menu .barra2 {
+    transition: all .7s ease;
+    display: none;
+}
+
+#menu>div {
+    width: 100%;
+    height: 10%;
+    margin-top: 17%;
+    background: var(--main-color);
+    border-radius: 3px;
+}
+
+#menu-slider>nav {
+    width: 100vw !important;
+
+}
+
+.menu-slider {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    margin-left: -100vw;
+}
+
+.apri-menu-slider {
+    margin-left: 0;
+    transition: all 1s ease;
+    background-image: linear-gradient(to bottom right, rgba(255, 100, 50, 0), rgba(255, 100, 50, 0.5));
+    /* background: var(--main-color); */
+}
+
+.chiudi-menu-slider {
+    margin-left: -100vw;
+    transition: all 1s ease;
+    background-image: linear-gradient(to bottom right, rgba(255, 100, 50, 0), rgba(255, 100, 50, 0.5));
+    /* background: var(--main-color); */
+}
+
+.img-blur {
+    filter: blur(3px);
+    transition: all 1s ease;
+}
+
+.text-blur {
+    color: transparent;
+    text-shadow: 0 0 10px rosybrown;
+    transition: all 1s ease;
+
+}
+
+#menu-slider ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-slider li {
+    text-decoration: none;
+    list-style: none;
+    padding: 40px;
+}
+
+#menu-slider li:hover a {
+    font-size: 3rem;
+
+}
+
+#menu-slider a:link {
+    text-decoration: none;
+}
+
+#menu-slider a {
+    color: var(--main-color-light);
+    /* color: var(--black); */
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+#logo {
+    position: absolute;
+    top: 55%;
+    margin: auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo p:nth-child(1) {
+    font-family: 'Comforter', cursive;
+    color: rosybrown;
+    font-size: 9rem;
+    padding: 5px;
+    border-radius: 20px;
+
+}
+
+#logo p:nth-child(2) {
+    font-family: 'Comforter', cursive;
+    font-size: 6rem;
+    /* color: var(--dark-red); */
+    color: var(--main-color);
+    letter-spacing: 0.6rem;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 5%;
+}
+
+#logo p:nth-child(2):hover {
+    color: white;
+}
+
+#logo p:nth-child(2):hover .handwriting {
+    color: red;
+}
+
+.handwriting {
+    font-family: 'Comforter', cursive;
+    font-size: 7rem;
+    color: var(--dark-red);
+    letter-spacing: 0.8rem;
+}
+
+#seconda-img {
+    position: relative;
+
+}
+
+#seconda-img>img {
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-position: center;
+    width: 100%;
+}
+
+#share {
+    font-size: 1.5rem;
+    position: absolute;
+    left: calc(50% / 5);
+    top: 70%;
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    user-select: none;
+}
+
+#share>div {
+    position: absolute;
+    left: -2%;
+    top: 0;
+    width: 14rem;
+    height: 100%;
+    border: solid rgba(255, 0, 0, 0.5);
+    border-width: 2px 2px 0 0;
+    transform: skew(-10deg);
+    border-radius: 10px;
+}
+
+.hide-share {
+    margin-left: -100vw;
+    transition: all 1s ease-in-out;
+
+}
+
+.show-share {
+    margin-left: 0;
+    transition: all 2s ease-in-out;
+
+}

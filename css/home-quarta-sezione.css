@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@300&display=swap');
+
+:root {
+    --main-color: rgba(229, 230, 224, 0.7);
+    --main-color-light: rgba(229, 230, 224, 1);
+    --dark-red: rgba(255, 0, 0, 0.5);
+    --black: rgb(8, 8, 8);
+    --violet: #620053;
+    --violet2: rgb(98, 0, 83)
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
+}
+
+#quarta-sezione {
+    background-color: var(--black);
+    width: 100vw;
+    /* height: 60vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#foot-logo {
+    font-family: 'Comforter', cursive;
+    color: rgba(238, 130, 238, 1);
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+#social-wrapper ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#social-wrapper ul li {
+    margin: 5px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#social-wrapper ul li ion-icon{
+    margin: 5px;
+}
+#newsletter-wrapper{
+    min-width: 320px;
+    max-width: 640px;
+    margin-top: 50px;
+    /* background-color: chartreuse; */
+}
+#newsletter-wrapper > h2{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+#foot-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#foot-input input[name='nome'],
+#foot-input input[name='cognome']{
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+#foot-input input[name='mail']{
+    width: 620px;
+    padding: 10px;
+    margin: 10px;
+    color: var(--black);
+}
+#nome-cognome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#foot-input div:nth-child(2){
+    width: 75%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#foot-invia{
+    width: 88px;
+    height: 44px;
+    color: var(--black);
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+/* #foot-input input{
+    margin: 10px;
+    color: var(--black);
+}
+#foot-input input[type='text']{
+    height: 30px;
+}
+#foot-input p:nth-child(2){
+    position: relative;
+}
+#foot-invia{
+    position: absolute;
+    width: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc( 75% - 75px);
+    color: var(--black);
+} */

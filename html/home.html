@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon/glass-cocktail.ico" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/72dca51289.css">
+
+
+    <link rel="stylesheet" href="/css/home-prima-sezione.css">
+    <link rel="stylesheet" href="/css/home-seconda-sezione.css">
+    <link rel="stylesheet" href="/css/home-terza-sezione.css">
+    <link rel="stylesheet" href="/css/home-quarta-sezione.css">
+    <link rel="stylesheet" href="/css/home-media.css">
+    <link rel="stylesheet" href="/css/home-logo.css">
+    <link rel="stylesheet" href="/css/home-menu-slider.css">
+    <title id="titolo-pagina">Home</title>
+</head>
+
+<body>
+
+    <!-- PRIMA SEZIONE -->
+    <section id="prima-sezione" class="sezioni">
+        <div id="cocktails-logo" class="sposta-cocktails-logo">cocktails</div>
+        <img id="img-logo" src="/img/Livello 0.png" alt="" class="sposta-img-logo">
+        <div id="menu">
+            <div class="barre nav-item"></div>
+            <div class="barre nav-item"></div>
+            <div class="barre nav-item"></div>
+        </div>
+        <ion-icon name="cart-outline" id="shop" class="nav-item"></ion-icon>
+        <ion-icon name="search-outline" id="cerca-icon" class="nav-item"></ion-icon>
+        <div id="cerca-menu">
+            <input type="text" placeholder="cerca">
+            <div id="cerca-icons">
+                <ion-icon name="search-outline" id="avvia-cerca"></ion-icon>
+                <ion-icon name="close-outline" id="chiudi-cerca"></ion-icon>
+            </div>
+        </div>
+
+        <center>
+            <div id="spot"> Scegli uno dei nostri cocktail o creane uno tuo personalizzato</div>
+        </center>
+
+        <div id="login" onclick="ajax('login.html', 'Sign-in')">
+            <div></div>login
+        </div>
+        <section id="home-wrapper">
+            <div id="desktop-home">
+                <img src="/img/img3.webp" alt="" class="img1 imgs-slider">
+                <img src="/img/img8.jpg" alt="" class="img2 imgs-slider">
+                <img src="/img/img6.jpg" alt="" class="img3 imgs-slider">
+            </div>
+
+            <p id="scopri" class="animazione-scopri">scopri il nostro <b class="handwriting">menu</b> </p>
+        </section>
+    </section>
+
+    <!-- SECONDA SEZIONE -->
+    <section id="seconda-sezione" class="sezioni">
+        <section id="componi">
+            <h1>componi il tuo cocktail personalizzato</h1>
+        </section>
+        <section id="istruzioni">
+            <div>
+                <p class="numero">1</p>
+                <p class="istruzione">scegli la base</p>
+                <p class="istruzione-dettagli">scegli la base su cui preparare il cocktail</p>
+            </div>
+            <div>
+                <p class="numero">2</p>
+                <p class="istruzione">scegli gli ingredienti</p>
+                <p class="istruzione-dettagli">scegli i tuoi ingredienti preferiti </p>
+
+            </div>
+        </section>
+        <center>
+            <button class="crea button-default">
+                <a href="#">crea il tuo cocktail</a>
+            </button>
+        </center>
+    </section>
+
+    <!-- TERZA SEZIONE -->
+    <section id="terza-sezione" class="sezioni">
+        <section id="cards-wrapper">
+            <div class="card" id="americano">
+                <div class="cocktail-img-wrapper">
+                    <img src="/img/americano-1.jpg" alt="">
+                    <img src="/img/americano-2.jpg" alt="">
+                </div>
+                <p class="titolo">americano</p>
+                <center class="descrizione-wrapper">
+                    <p class="descrizione">Un equilibrio secco e agrodolce di amari, Vermouth Cocchi e Gin Tanqueray.
+                    </p>
+                </center>
+                <button class="add">
+                    <a href="#">aggiungi al carrello</a>
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="cocktail-img-wrapper">
+                    <img src="/img/whiskey-sour-1.jpg" alt="">
+                    <img src="/img/whiskey-sour-2.jpg" alt="">
+                </div>
+                <p class="titolo">whiskey sour</p>
+                <center class="descrizione-wrapper">
+                    <p class="descrizione">Il Rich Bulleit Bourbon incontra il caratteristico sapore del limone.</p>
+                </center>
+                <button class="add">
+                    <a href="#">aggiungi al carrello</a>
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="cocktail-img-wrapper">
+                    <img src="/img/gin-tonic-1.jpeg" alt="">
+                    <img src="/img/gint-tonic-2.jpg" alt="">
+                </div>
+                <p class="titolo">gin tonic</p>
+                <center class="descrizione-wrapper">
+                    <p class="descrizione">Un classico mix di Gin Tanqueray e soda. Fresco, sapido, aromatico.</p>
+                </center>
+                <button class="add">
+                    <a href="#">aggiungi al carrello</a>
+                </button>
+            </div>
+        </section>
+        <center>
+            <button class="button-default">
+                <a href="#">scopri tutti i nostri cocktails</a>
+            </button>
+        </center>
+    </section>
+
+    <!-- QUARTA SEZIONE -->
+    <section id="quarta-sezione" class="sezioni">
+        <div id="social-wrapper">
+            <div id="foot-logo">cocktails</div>
+            <ul>
+                <li class="foot-social">
+                    <ion-icon name="logo-facebook"></ion-icon>facebook
+                </li>
+                <li class="foot-social">
+                    <ion-icon name="logo-instagram"></ion-icon>instagram
+                </li>
+                <li class="foot-social">
+                    <ion-icon name="logo-youtube"></ion-icon>youtube
+                </li>
+            </ul>
+        </div>
+        <div id="newsletter-wrapper">
+            <h2>Iscriviti alla Newsletter</h2>
+            <div id="foot-input">
+                <div>
+                    <p id="nome-cognome">
+                        <input type="text" placeholder="Nome" name="nome" required>
+                        <input type="text" placeholder="Cognome" name="cognome" required>
+                    </p>
+                    <p id="mail">
+                        <input type="text" placeholder="Email" name="mail" required>
+                    </p>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                    </label>
+                    <button id="foot-invia">INVIA</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- menu slider -->
+    <section id="menu-slider" class=" menu-slider chiudi-menu-slider">
+        <nav>
+            <ul>
+                <center>
+                    <li><a href="">home</a></li>
+                    <li><a href="">menu</a></li>
+                    <li><a href="">carrello</a></li>
+                    <li><a href="">crea il tuo cocktail</a></li>
+                </center>
+            </ul>
+        </nav>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/javascript/homepage.js"></script>
+</body>
+
+</html>

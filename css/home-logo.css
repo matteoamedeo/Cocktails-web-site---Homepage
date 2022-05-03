@@ -1,0 +1,78 @@
+:root {
+    --main-color: rgba(229, 230, 224, 0.7);
+    --main-color-light: rgba(229, 230, 224, 1);
+    --dark-red: rgba(255, 0, 0, 0.5);
+    --black: rgb(8, 8, 8);
+    --violet: #620053;
+    --violet2: rgba(98, 0, 83, 1);
+    --violet3: rgba(181, 80, 140, 0.8)
+}
+#nav{
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+    background-color: wheat ;
+}
+
+#logo {
+    position: absolute;
+    top: 8%;
+    margin: auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-logo {
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-position: center;
+    margin: auto;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 10vh;
+}
+
+.sposta-img-logo {
+    animation: animate1 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate1 {
+    0% {
+        top: -300px;
+        position: absolute
+    }
+}
+
+#cocktails-logo {
+    font-family: 'Comforter', cursive;
+    color: rosybrown;
+    color: var(--violet3);
+    color: violet;
+    color: rgba(238, 130, 238, 1);
+    font-size: 5rem;
+    padding: 5px;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.sposta-cocktails-logo {
+    animation: animate2 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate2 {
+    0% {
+        left: -20%;
+        position: absolute
+    }
+}

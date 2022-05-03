@@ -1,0 +1,128 @@
+@media screen and (max-width: 768px) {
+    #login {
+        font-size: 0.8rem !important;
+        width: 5rem !important;
+    }
+
+    #login>div {
+        width: 6rem !important;
+        right: -20% !important;
+    }
+
+    #shop {
+        font-size: 2rem;
+    }
+
+    #cerca-icon {
+
+        font-size: 2rem;
+    }
+
+    #menu {
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+
+    #menu .barra1 {
+        transform: rotate(45deg) translateX(0.6rem) translateY(0.6rem) !important;
+    }
+
+    #menu .barra3 {
+        transform: rotate(-45deg) translateX(-0.4rem) translateY(0.4rem) !important;
+    }
+
+    #istruzioni {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    #slider-wrapper .img-wrapper img {
+        padding: 0 20vw !important;
+    }
+    .add>a {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #slider-wrapper .img-wrapper img {
+        padding: 0 15vw !important;
+    }
+
+    #scopri {
+        font-size: 8vw !important;
+    }
+
+    .handwriting {
+        font-size: 16vw !important;
+    }
+
+    /* card */
+    #cards-wrapper {
+        flex-direction: column;
+    }
+    .card {
+        width: 320px !important;
+        height: 420px !important;
+    }
+
+    .card>img {
+        width: 100%;
+        min-height: 240px;
+        max-height: 240px;
+
+    }
+
+    .titolo {
+        font-size: 1.5rem;
+    }
+
+    .descrizione {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #scopri {
+        display: initial;
+    }
+
+    #spot {
+        width: 100vw;
+        font-size: 0.6rem;
+        top: 1%;
+    }
+    #nome-cognome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #foot-input input[name='mail']{
+        width: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    #slider-wrapper .img-wrapper img {
+        padding: 25vw 10vw !important;
+    }
+
+    #scopri {
+        font-size: 8vw !important;
+    }
+
+    .handwriting {
+        font-size: 16vw !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #slider-wrapper .img-wrapper img {
+        padding: 30vw 10vw !important;
+    }
+
+}
